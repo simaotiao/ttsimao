@@ -1,23 +1,211 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="theme-color" content="#000000" />
-    <title>Play | Gamba</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="apple-touch-icon" href="/icon-512.png" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TiT Resolve | Casal de Aluguel</title>
+    <meta
+      name="description"
+      content="TiT Resolve Casal de Aluguel: eletrica, hidraulica, pintura, reparos, tomadas, chuveiros e servicos residenciais com atendimento organizado."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <script type="module">
-      import * as buffer from 'buffer'
-      window.Buffer = buffer.Buffer
-    </script>
-    <script type="module" src="./src/index.tsx"></script>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="TiT Resolve">
+        <img src="./assets/tit-resolve-logo.jpeg" alt="TiT Resolve" />
+        <span>TiT Resolve</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegacao principal">
+        <a href="#servicos">Servi&ccedil;os</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="header-button" href="https://wa.me/5511916354296?text=Ola! Gostaria de solicitar um orcamento com a TiT Resolve." target="_blank" rel="noreferrer">
+        Chamar agora
+      </a>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-photo" aria-hidden="true"></div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Casal de Aluguel</p>
+          <h1>Manuten&ccedil;&atilde;o residencial sem enrola&ccedil;&atilde;o.</h1>
+          <p class="hero-text">
+            A TiT Resolve cuida de pequenos e m&eacute;dios servi&ccedil;os da sua casa:
+            el&eacute;trica, reparos, pintura, hidr&aacute;ulica, montagem e acabamento.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://wa.me/5511916354296?text=Ola! Vi o site da TiT Resolve e quero um orcamento." target="_blank" rel="noreferrer">
+              WhatsApp
+            </a>
+            <a class="button ghost" href="#servicos">Ver servi&ccedil;os</a>
+          </div>
+          <div class="trust-row" aria-label="Destaques do atendimento">
+            <span>Or&ccedil;amento por foto</span>
+            <span>Atendimento combinado</span>
+            <span>Servi&ccedil;o limpo</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-contact" id="contato">
+        <div>
+          <strong>Precisa resolver hoje?</strong>
+          <span>Envie foto ou v&iacute;deo pelo WhatsApp para avaliarmos o servi&ccedil;o.</span>
+        </div>
+        <a class="button primary" href="https://wa.me/5511916354296?text=Ola! Tenho um servico para a TiT Resolve avaliar." target="_blank" rel="noreferrer">
+          Pedir or&ccedil;amento
+        </a>
+      </section>
+
+      <section class="section services" id="servicos">
+        <div class="section-title">
+          <p class="eyebrow">Tabela de pre&ccedil;os</p>
+          <h2>Servi&ccedil;os prestados</h2>
+          <p>Valores iniciais para divulga&ccedil;&atilde;o. O pre&ccedil;o final pode variar conforme tamanho, estado do local e materiais necess&aacute;rios.</p>
+        </div>
+
+        <div class="price-grid">
+          <article class="price-card">
+            <span class="price-icon">PIN</span>
+            <h3>Pintura de parede</h3>
+            <p>Pintura de paredes internas e externas com acabamento caprichado.</p>
+            <strong>A partir de <b>R$ 35/m&sup2;</b></strong>
+            <a href="https://wa.me/5511916354296?text=Ola! Quero solicitar pintura de parede com a TiT Resolve." target="_blank" rel="noreferrer">Solicitar</a>
+          </article>
+          <article class="price-card">
+            <span class="price-icon">HID</span>
+            <h3>Reparo hidr&aacute;ulico</h3>
+            <p>Conserto de vazamentos, troca de torneiras, sif&otilde;es e registros.</p>
+            <strong>A partir de <b>R$ 120,00</b></strong>
+            <a href="https://wa.me/5511916354296?text=Ola! Quero solicitar reparo hidraulico com a TiT Resolve." target="_blank" rel="noreferrer">Solicitar</a>
+          </article>
+          <article class="price-card">
+            <span class="price-icon">ELE</span>
+            <h3>Reparo el&eacute;trico</h3>
+            <p>Troca de tomadas, interruptores, lumin&aacute;rias e ventiladores.</p>
+            <strong>A partir de <b>R$ 100,00</b></strong>
+            <a href="https://wa.me/5511916354296?text=Ola! Quero solicitar reparo eletrico com a TiT Resolve." target="_blank" rel="noreferrer">Solicitar</a>
+          </article>
+          <article class="price-card">
+            <span class="price-icon">PRA</span>
+            <h3>Instala&ccedil;&atilde;o de prateleiras</h3>
+            <p>Montagem e instala&ccedil;&atilde;o de prateleiras, nichos e suportes.</p>
+            <strong>A partir de <b>R$ 80,00</b></strong>
+            <a href="https://wa.me/5511916354296?text=Ola! Quero solicitar instalacao de prateleiras com a TiT Resolve." target="_blank" rel="noreferrer">Solicitar</a>
+          </article>
+          <article class="price-card">
+            <span class="price-icon">CHU</span>
+            <h3>Troca de chuveiro</h3>
+            <p>Instala&ccedil;&atilde;o e troca de chuveiro el&eacute;trico com seguran&ccedil;a.</p>
+            <strong>A partir de <b>R$ 90,00</b></strong>
+            <a href="https://wa.me/5511916354296?text=Ola! Quero solicitar troca de chuveiro com a TiT Resolve." target="_blank" rel="noreferrer">Solicitar</a>
+          </article>
+          <article class="price-card">
+            <span class="price-icon">POR</span>
+            <h3>Portas e fechaduras</h3>
+            <p>Ajuste, reparo e troca de portas, dobradi&ccedil;as e fechaduras.</p>
+            <strong>A partir de <b>R$ 100,00</b></strong>
+            <a href="https://wa.me/5511916354296?text=Ola! Quero solicitar reparo de portas e fechaduras com a TiT Resolve." target="_blank" rel="noreferrer">Solicitar</a>
+          </article>
+          <article class="price-card">
+            <span class="price-icon">MAN</span>
+            <h3>Manuten&ccedil;&atilde;o geral</h3>
+            <p>Pequenos reparos e ajustes diversos para sua resid&ecirc;ncia.</p>
+            <strong>A partir de <b>R$ 150,00</b></strong>
+            <a href="https://wa.me/5511916354296?text=Ola! Quero solicitar manutencao geral com a TiT Resolve." target="_blank" rel="noreferrer">Solicitar</a>
+          </article>
+          <article class="price-card">
+            <span class="price-icon">GRA</span>
+            <h3>Pintura de port&atilde;o/grade</h3>
+            <p>Lixamento, prepara&ccedil;&atilde;o e pintura de port&otilde;es e grades met&aacute;licas.</p>
+            <strong>A partir de <b>R$ 200,00</b></strong>
+            <a href="https://wa.me/5511916354296?text=Ola! Quero solicitar pintura de portao ou grade com a TiT Resolve." target="_blank" rel="noreferrer">Solicitar</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process" id="como-funciona">
+        <div class="section-title">
+          <p class="eyebrow">Como funciona</p>
+          <h2>Do contato ao servi&ccedil;o pronto</h2>
+        </div>
+        <div class="steps">
+          <article>
+            <span>1</span>
+            <h3>Voc&ecirc; envia o problema</h3>
+            <p>Fotos, v&iacute;deos e uma explica&ccedil;&atilde;o curta ajudam a estimar melhor.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Combinamos o atendimento</h3>
+            <p>Alinhamos materiais, hor&aacute;rio, local e a melhor forma de execu&ccedil;&atilde;o.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Executamos com cuidado</h3>
+            <p>Servi&ccedil;o feito com foco em limpeza, acabamento e solu&ccedil;&atilde;o real.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section work" id="trabalhos">
+        <div class="section-title">
+          <p class="eyebrow">Visual da marca</p>
+          <h2>Trabalho com cara de obra organizada</h2>
+        </div>
+        <div class="work-grid">
+          <figure>
+            <img src="./assets/hero-servicos-principal-web.jpg" alt="TiT Resolve em ambiente de trabalho" />
+          </figure>
+          <figure>
+            <img src="./assets/hero-casal-fisionomia-web.jpg" alt="Casal TiT Resolve em desenho" />
+          </figure>
+          <figure>
+            <img src="./assets/casal-trabalhando-desenho-web.jpg" alt="Profissionais em desenho" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div>
+          <p class="eyebrow">TiT Resolve</p>
+          <h2>Tem algo parado em casa esperando conserto?</h2>
+          <p>Chame no WhatsApp e mande as fotos. A gente avalia e combina o melhor atendimento.</p>
+        </div>
+        <a class="button primary" href="https://wa.me/5511916354296?text=Ola! Quero agendar um servico com a TiT Resolve." target="_blank" rel="noreferrer">
+          Agendar pelo WhatsApp
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <strong>TiT Resolve</strong>
+      <span>Casal de Aluguel &middot; manuten&ccedil;&atilde;o residencial</span>
+      <a href="https://wa.me/5511916354296" target="_blank" rel="noreferrer">(11) 91635-4296</a>
+      <small>&copy; 2026 TiT Resolve. Todos os direitos reservados.</small>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/5511916354296?text=Ola! Gostaria de solicitar um orcamento com a TiT Resolve." target="_blank" rel="noreferrer" aria-label="Falar no WhatsApp">
+      <img src="./assets/whatsapp-icon.svg" alt="" aria-hidden="true" />
+    </a>
+
+    <div class="color-picker" aria-label="Alterar cor do site">
+      <label for="siteColor">Cor</label>
+      <input id="siteColor" type="color" value="#249c9a" aria-label="Escolher cor do site" />
+      <button id="resetColor" type="button">Resetar</button>
+    </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
