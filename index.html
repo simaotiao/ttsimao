@@ -236,6 +236,28 @@
       <button id="resetColor" type="button">Resetar</button>
     </div>
 
-    <script src="./script.js?v=carrosseladmin"></script>
+    <script src="./script.js?v=banner-hospedagem"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        window.setTimeout(function () {
+          var modal = document.querySelector("#promoModal");
+          if (!modal || modal.dataset.promoReady === "1" || modal.classList.contains("is-open")) return;
+
+          var closeButton = document.querySelector("#promoClose");
+          var closePromo = function () {
+            modal.classList.remove("is-open");
+            modal.setAttribute("aria-hidden", "true");
+          };
+
+          modal.classList.add("is-open");
+          modal.setAttribute("aria-hidden", "false");
+          closeButton && closeButton.addEventListener("click", closePromo);
+          modal.addEventListener("click", function (event) {
+            if (event.target === modal) closePromo();
+          });
+          window.setTimeout(closePromo, 7000);
+        }, 900);
+      });
+    </script>
   </body>
 </html>

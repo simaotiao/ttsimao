@@ -151,6 +151,7 @@ function renderPromo(config) {
   const modal = document.querySelector("#promoModal");
   const promo = config.promo || fallbackConfig.promo;
   if (!modal || !promo.enabled) return;
+  modal.dataset.promoReady = "1";
 
   const number = config.whatsappNumber || fallbackConfig.whatsappNumber;
   document.querySelector("#promoEyebrow").textContent = promo.eyebrow;
