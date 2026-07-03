@@ -1,0 +1,25 @@
+{
+  "whatsappNumber": "5511930756726",
+  "carousel": [
+    {"src": "./assets/hero-servicos-principal-web.jpg", "alt": "Ambiente de trabalho TiT Resolve"},
+    {"src": "./assets/hero-casal-fisionomia-web.jpg", "alt": "Casal TiT Resolve em desenho"},
+    {"src": "./assets/casal-trabalhando-desenho-web.jpg", "alt": "Servicos residenciais em desenho"},
+    {"src": "./assets/casal-trabalhando-web.jpg", "alt": "Casal trabalhando"},
+    {"src": "./assets/hero-personagens-oficiais-web.jpg", "alt": "Personagens TiT Resolve"},
+    {"src": "./assets/tit-resolve-casal-web.jpg", "alt": "TiT Resolve casal de aluguel"},
+    {"src": "./assets/boneca-obra-web.jpg", "alt": "Profissional de obra"},
+    {"src": "./assets/boneca-andando-web.jpg", "alt": "Profissional em movimento"},
+    {"src": "./assets/hero-casal-final-web.jpg", "alt": "Casal TiT Resolve"},
+    {"src": "./assets/hero-servicos-principal-original.png", "alt": "Divulgacao dos servicos TiT Resolve"}
+  ],
+  "promo": {
+    "enabled": true,
+    "eyebrow": "Oferta especial por tempo limitado",
+    "title": "Pintura completa em apartamento da COHAB",
+    "price": "R$ 799,00",
+    "text": "Renove seu apartamento com uma pintura completa, organizada e feita com capricho pela TiT Resolve. Uma solucao ideal para deixar os ambientes mais claros, limpos e com cara de casa nova, com atendimento direto e combinacao simples pelo WhatsApp.",
+    "note": "Na cor branca. Valor promocional sujeito a avaliacao do estado das paredes, metragem do imovel e necessidade de reparos extras.",
+    "buttonText": "Quero pintar meu apartamento",
+    "whatsappText": "Ola! Quero saber sobre a promocao de pintura completa em apartamento da COHAB por R$ 799,00 na cor branca."
+  }
+}

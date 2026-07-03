@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simulador de Pintura | TiT Resolve</title>
+    <meta name="description" content="Simule uma cor de tinta na parede usando uma foto do ambiente." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./simulador.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="TiT Resolve">
+        <img src="./assets/tit-resolve-logo.jpeg" alt="TiT Resolve" />
+        <span>TiT Resolve</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegacao principal">
+        <a href="./#servicos">Servi&ccedil;os</a>
+        <a href="./simulador-pintura.html">Simular pintura</a>
+        <a href="./#contato">Contato</a>
+      </nav>
+      <a class="header-button" href="https://wa.me/5511930756726?text=Ola! Quero simular uma pintura com a TiT Resolve." target="_blank" rel="noreferrer">
+        Chamar agora
+      </a>
+    </header>
+
+    <main class="simulator-page">
+      <section class="simulator-hero">
+        <div>
+          <p class="eyebrow">Simulador de pintura</p>
+          <h1>Teste uma cor na parede antes de pintar.</h1>
+          <p>
+            Envie ou tire uma foto do ambiente, escolha a cor e marque a parede para visualizar
+            uma simula&ccedil;&atilde;o antes de pedir o or&ccedil;amento.
+          </p>
+        </div>
+      </section>
+
+      <section class="paint-simulator" aria-label="Simulador de cor na parede">
+        <aside class="simulator-panel">
+          <label class="file-button">
+            Enviar ou tirar foto
+            <input id="photoInput" type="file" accept="image/*" capture="environment" />
+          </label>
+
+          <label>
+            Cor da tinta
+            <input id="paintColor" type="color" value="#d9f3ed" />
+          </label>
+
+          <label>
+            Intensidade
+            <input id="paintOpacity" type="range" min="20" max="90" value="58" />
+          </label>
+
+          <label>
+            Tamanho do pincel
+            <input id="brushSize" type="range" min="14" max="90" value="42" />
+          </label>
+
+          <div class="simulator-actions">
+            <button id="autoWall" type="button">Detectar parede clara</button>
+            <button id="paintMode" type="button">Pincel</button>
+            <button id="eraseMode" type="button">Borracha</button>
+            <button id="clearMask" type="button">Limpar</button>
+            <button id="downloadResult" type="button">Baixar imagem</button>
+          </div>
+
+          <p class="simulator-help">
+            Para melhor resultado, use uma foto com boa luz. Se a detec&ccedil;&atilde;o autom&aacute;tica
+            pegar outra &aacute;rea, use o pincel ou a borracha para ajustar.
+          </p>
+        </aside>
+
+        <div class="canvas-wrap">
+          <canvas id="paintCanvas" width="1100" height="720"></canvas>
+          <div class="canvas-empty" id="canvasEmpty">
+            Envie uma foto do ambiente para iniciar a simula&ccedil;&atilde;o.
+          </div>
+        </div>
+      </section>
+
+      <section class="simulator-cta">
+        <div>
+          <h2>Gostou da cor?</h2>
+          <p>Envie a simula&ccedil;&atilde;o para a TiT Resolve e solicite o or&ccedil;amento da pintura.</p>
+        </div>
+        <a class="button primary" href="https://wa.me/5511930756726?text=Ola! Fiz uma simulacao de pintura e quero um orcamento." target="_blank" rel="noreferrer">
+          Enviar pelo WhatsApp
+        </a>
+      </section>
+    </main>
+
+    <a class="floating-whatsapp" href="https://wa.me/5511930756726?text=Ola! Quero simular uma pintura com a TiT Resolve." target="_blank" rel="noreferrer" aria-label="Falar no WhatsApp">
+      <img src="./assets/whatsapp-icon.svg" alt="" aria-hidden="true" />
+    </a>
+
+    <script src="./simulador.js"></script>
+  </body>
+</html>
