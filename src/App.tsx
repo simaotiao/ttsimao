@@ -3,6 +3,7 @@ import { GambaUi } from 'gamba-react-ui-v2'
 import { useTransactionError } from 'gamba-react-v2'
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import { Modal } from './components/Modal'
 import { useToast } from './hooks/useToast'
 import { useUserStore } from './hooks/useUserStore'
@@ -78,6 +79,7 @@ export default function App() {
         <h2 style={{ textAlign: 'center' }}>Recent Plays</h2>
         <RecentPlays />
       </MainWrapper>
+      <Analytics />
     </>
   )
 }
